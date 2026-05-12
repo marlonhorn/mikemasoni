@@ -30,9 +30,12 @@ export function Contact() {
         </div>
 
         <form className="grid gap-4 rounded-md border border-white/15 bg-white/[0.02] p-7" onSubmit={handleSubmit}>
-          <input className="border-b border-white/20 bg-transparent px-1 py-3 text-white outline-none placeholder:text-white/40" placeholder="Name" aria-label="Name" name="name" required />
-          <input className="border-b border-white/20 bg-transparent px-1 py-3 text-white outline-none placeholder:text-white/40" placeholder="Email" aria-label="Email" name="email" type="email" required />
-          <textarea className="min-h-28 border-b border-white/20 bg-transparent px-1 py-3 text-white outline-none placeholder:text-white/40" placeholder="Project details" aria-label="Project details" name="message" />
+          <label htmlFor="contact-name" className="sr-only">Name</label>
+          <input id="contact-name" className="border-b border-white/20 bg-transparent px-1 py-3 text-white outline-none placeholder:text-white/40" placeholder="Name" name="name" required />
+          <label htmlFor="contact-email" className="sr-only">Email</label>
+          <input id="contact-email" className="border-b border-white/20 bg-transparent px-1 py-3 text-white outline-none placeholder:text-white/40" placeholder="Email" name="email" type="email" required />
+          <label htmlFor="contact-message" className="sr-only">Project details</label>
+          <textarea id="contact-message" className="min-h-28 border-b border-white/20 bg-transparent px-1 py-3 text-white outline-none placeholder:text-white/40" placeholder="Project details" name="message" required />
           <button type="submit" className="mt-3 w-fit rounded-full border border-white px-5 py-2 text-xs tracking-[0.28em] text-white uppercase transition hover:bg-white hover:text-black">
             Send Inquiry
           </button>

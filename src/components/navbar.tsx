@@ -4,6 +4,8 @@ import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { navLinks } from "@/data/content";
 
+const SCROLL_THRESHOLD = 24;
+
 export function Navbar() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -16,7 +18,7 @@ export function Navbar() {
       ticking.current = true;
 
       window.requestAnimationFrame(() => {
-        const nextState = window.scrollY > 24;
+        const nextState = window.scrollY > SCROLL_THRESHOLD;
         if (nextState !== lastState.current) {
           lastState.current = nextState;
           setScrolled(nextState);

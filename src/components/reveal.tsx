@@ -32,7 +32,7 @@ export function Reveal({ children, className = "" }: RevealProps) {
   return (
     <div
       ref={ref}
-      className={`${className} transition-all duration-700 ease-out ${visible ? "translate-y-0 opacity-100" : "translate-y-6 opacity-0"}`}
+      className={`${className} transition-all duration-700 ease-out motion-reduce:translate-y-0 motion-reduce:opacity-100 motion-reduce:transition-none ${visible ? "translate-y-0 opacity-100" : "translate-y-6 opacity-0"}`}
     >
       {children}
     </div>

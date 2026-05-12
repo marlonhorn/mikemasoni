@@ -66,10 +66,16 @@ export function Portfolio() {
       </Reveal>
 
       {selected && (
-        <div className="fixed inset-0 z-[70] flex items-center justify-center bg-black/95 p-6" role="dialog" aria-modal="true">
+        <div
+          className="fixed inset-0 z-[70] flex items-center justify-center bg-black/95 p-6"
+          role="dialog"
+          aria-modal="true"
+          aria-label="Gallery lightbox"
+        >
           <button
             onClick={() => setSelected(null)}
             className="absolute top-6 right-6 text-xs tracking-[0.32em] text-white uppercase"
+            aria-label="Close lightbox"
           >
             Close
           </button>

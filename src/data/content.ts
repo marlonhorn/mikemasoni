@@ -9,10 +9,9 @@ export type GalleryItem = {
 };
 
 export const navLinks = [
-  { label: "Portfolio", href: "#portfolio" },
-  { label: "About", href: "#about" },
-  { label: "Services", href: "#services" },
-  { label: "Contact", href: "#contact" },
+  { label: "Portfolio", href: "/#portfolio" },
+  { label: "Services", href: "/#services" },
+  { label: "About + Contact", href: "/about-contact" },
 ];
 
 export const galleryFilters: { label: string; value: GalleryCategory }[] = [

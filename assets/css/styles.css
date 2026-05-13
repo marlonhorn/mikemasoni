@@ -535,6 +535,95 @@ a {
   letter-spacing: 0.22rem;
 }
 
+.site-footer {
+  width: min(80vw, 1460px);
+  margin: 0 auto;
+  padding: 7rem 0 4rem;
+  text-align: center;
+}
+
+.site-footer-inner {
+  display: grid;
+  justify-items: center;
+  gap: 3rem;
+}
+
+.site-footer-copy {
+  display: grid;
+  justify-items: center;
+  gap: 1.1rem;
+  max-width: 48rem;
+  padding: 0 1rem;
+}
+
+.site-footer-copy h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(1.2rem, 3.2vw, 2.6rem);
+  font-weight: 400;
+  letter-spacing: 0.18rem;
+  line-height: 1.05;
+}
+
+.site-footer-copy p {
+  max-width: 46rem;
+  font-size: 0.7rem;
+  line-height: 2;
+  letter-spacing: 0.16rem;
+  opacity: 0.72;
+}
+
+.site-footer-meta {
+  display: grid;
+  justify-items: center;
+  gap: 1.2rem;
+}
+
+.site-footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.4rem;
+  font-size: 0.58rem;
+  letter-spacing: 0.24rem;
+  opacity: 0.7;
+}
+
+.site-footer-socials {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.site-footer-socials a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.7rem;
+  height: 2.7rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.02);
+  transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
+}
+
+.site-footer-socials a:hover {
+  transform: translateY(-2px);
+  border-color: rgba(255, 255, 255, 0.28);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.site-footer-socials svg {
+  width: 1rem;
+  height: 1rem;
+  fill: currentColor;
+}
+
+.site-footer-note {
+  font-size: 0.54rem;
+  letter-spacing: 0.22rem;
+  opacity: 0.45;
+}
+
 @media (max-width: 900px) {
   .overview {
     grid-template-columns: 1fr;
@@ -634,6 +723,19 @@ a {
 
   .category-contact-links {
     justify-items: start;
+  }
+
+  .site-footer {
+    width: 100%;
+    padding: 5rem 1rem 3rem;
+  }
+
+  .site-footer-inner {
+    gap: 2.2rem;
+  }
+
+  .site-footer-copy p {
+    line-height: 1.8;
   }
 }
 

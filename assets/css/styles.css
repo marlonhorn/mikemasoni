@@ -56,13 +56,13 @@ a {
 .site-header {
   position: fixed;
   top: 0;
-  left: 0;
-  right: 0;
+  left: 10vw;
+  right: 10vw;
   z-index: 80;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.15rem 2rem;
+  padding: 1.15rem 0;
   background: rgba(0, 0, 0, 0.58);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(18px);
@@ -375,10 +375,6 @@ a {
   padding: 8.6rem 0 4rem;
 }
 
-.category-page .site-header {
-  padding-inline: 10vw;
-}
-
 .category-hero,
 .category-lead,
 .category-copy,
@@ -641,7 +637,9 @@ a {
 
 @media (max-width: 760px) {
   .site-header {
-    padding: 1rem 1.2rem;
+    left: 1.2rem;
+    right: 1.2rem;
+    padding: 1rem 0;
   }
 
   .menu-toggle {
@@ -693,10 +691,6 @@ a {
 
   .category-section {
     width: 100%;
-  }
-
-  .category-page .site-header {
-    padding-inline: 1.2rem;
   }
 
   .category-page-main {
